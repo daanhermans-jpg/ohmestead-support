@@ -27,7 +27,7 @@ Wijzigingen in de live modus worden naar je eigen server gestuurd en kunnen je i
 
 ## Privacybeleid
 
-**Van toepassing op:** de native Ohmestead iPhone-app. **Laatst bijgewerkt:** 28 oktober 2026. **Ontwikkelaar:** Daan Hermans.
+**Van toepassing op:** de native Ohmestead iPhone-app. **Laatst bijgewerkt:** 5 November 2026. **Ontwikkelaar:** Daan Hermans.
 
 ### Gegevens in de app
 
@@ -35,7 +35,7 @@ De app stuurt geen gebruiksstatistieken, advertentiesignalen of energiemetingen 
 
 Voor live gebruik communiceert de app via HTTPS met de server die je zelf instelt. Je inloggegevens gaan naar die server om je aan te melden. De app leest daar beschikbare energiemetingen, apparaten en instellingen. Wanneer je apparaten of instellingen wijzigt, stuurt de app deze wijzigingen naar die server. Door jou ingevoerde apparaatgegevens kunnen ook apparaatwachtwoorden bevatten.
 
-Het serveradres wordt lokaal op de iPhone bewaard om het opnieuw te kunnen invullen. Het inlogwachtwoord wordt niet blijvend opgeslagen door de app. De aanmeldsessie en de opgehaalde gegevens worden in het geheugen verwerkt. De ingebouwde demonstratie gebruikt fictieve gegevens en maakt hiervoor geen verbinding met een server.
+The server address is stored locally on the iPhone. The login password is never retained. From version 1.1.0, only the existing, expiring server session is kept in the iPhone Keychain, accessible while unlocked and limited to this device and the exact HTTPS server address and port. It is not synchronized through iCloud or sent to the developer. Temporary network failures retain the session; sign-out and rejected authentication remove it. The server determines its validity. Retrieved installation data stays in app memory. The built-in demonstration uses fictional data without contacting a server.
 
 ### Je eigen server en andere diensten
 
@@ -43,7 +43,7 @@ De eigenaar of beheerder van je gekozen server bepaalt welke gegevens die server
 
 ### Verwijderen en vragen
 
-Je kunt stoppen met de app gebruiken en de app verwijderen om de door de app lokaal bewaarde instellingen te verwijderen. Dit verwijdert geen gegevens op je server. Voor vragen over de app of dit privacybeleid kun je een [supportvraag](https://github.com/daanhermans-jpg/ohmestead-support/issues/new) plaatsen. Plaats hierin geen persoonlijke of vertrouwelijke gegevens.
+Use “Afmelden / andere server” in Settings to remove the saved session before uninstalling the app. Keychain items can survive an app reinstall; uninstalling alone must not be relied on to end a server session. Removing the app deletes its local preferences, but does not delete data on your server. Voor vragen over de app of dit privacybeleid kun je een [supportvraag](https://github.com/daanhermans-jpg/ohmestead-support/issues/new) plaatsen. Plaats hierin geen persoonlijke of vertrouwelijke gegevens.
 
 ### Deze supportpagina
 
